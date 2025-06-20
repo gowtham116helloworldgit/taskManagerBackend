@@ -1,0 +1,26 @@
+GET http://localhost:3000/getTasks/  
+
+### 
+POST http://localhost:3000/posttasks/ 
+Content-Type: application/json
+
+{
+  "title": "Complete UI Desig",
+  "description": "Finalize and push the homepag UI",
+  "status": "in_progress",
+  "due_date": "2025-07-26"
+}
+
+### 
+PUT http://localhost:3000/updatetask/2
+Content-Type: application/json
+
+{
+  "title": "Fix header bug",
+  "description": "Fix sticky header not working on scroll",
+  "status": "in_progress",
+  "due_date": "2025-07-28"
+}
+
+### 
+ DELETE http://localhost:3000/deleteTask/2
